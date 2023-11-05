@@ -1,4 +1,6 @@
-# Smoker Signals: a Machine Learning Project for DataTalksClub MLBookcamp
+# Smoker Signals: a Machine Learning Project for DataTalksClub ML Zoomcamp
+
+![](smoker_signals_project.png)
 
 ## Problem Description
 
@@ -8,7 +10,7 @@
 - EDA can be found in the `notebook.ipynb` file
 - Feature Engineering yielded 3 additional columns:
     - `cholesterol_ratio`, `de_ritis_ratio`, `bmi_class`
-- It involves:
+- EDA involves:
     - Range of values
     - Distribution of data in numerical Columns
     - Checking for missing values and duplicate rows
@@ -52,7 +54,7 @@
     LGBMClassifier
     RandomForestClassifier
     ```
-- Best model:
+- Best model based on AUC:
     ```
     XGBClassifier
 
@@ -132,7 +134,7 @@
 
         make deploy
 
-2. Copy the `app url`` after the process outputs: 
+2. Copy the `application url` after the process outputs: 
     
         INFO    Application available at `application-url`
         INFO    Successfully launched environment: smoker-serving-env
@@ -149,3 +151,12 @@
     ```
     make terminate-app
     ```
+
+6. Expected results:
+    - Creating the smoking-server-env and the application
+
+        ![](eb-create.png)
+
+    - Result of running the test script
+
+        ![](eb-result.png)
