@@ -73,7 +73,7 @@
 - The logic for training the model is exported to a separate script: `train.py`
 
 ## Model deployment
-- Model is deployed with Flask
+- Model is served through Flask web framework.
 ## Dependency and environment management
 - Pipenv was used as a virtual environment. Pipfile and Pipfile.lock contains the dependencies. 
 - Steps in setting up the environment and the application is dockerized.
@@ -81,7 +81,7 @@
 - The application is containerized. To run the this project, follow the steps in [Reproducibility - Local](#to-run-the-docker-container-locally).
 ## Cloud deployment
 - This app can also be deployed in `AWS Elastic Beanstalk` following the steps in [Reproducibility - Cloud](#to-deploy-and-run-the-app-using-cloud).
-- There's a URL for testing - or video/screenshot of testing it
+- There's a [screenshot (at Step 6)](#to-deploy-and-run-the-app-using-aws-elastic-beanstalk) of testing it
 
 ## Reproducibility
 - You can re-execute the `notebook.py` using Google Colab
