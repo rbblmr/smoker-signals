@@ -1,0 +1,33 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+scikit-learn = "*"
+flask = "*"
+gunicorn = "*"
+mlflow = "*"
+pandas = "*"
+seaborn = "*"
+hyperopt = "*"
+xgboost = "*"
+fastparquet = "*"
+ipykernel = "*"
+matplotlib = "*"
+pysftp = "*"
+jinja2 = "*"
+awsebcli = "*"
+
+[dev-packages]
+ipykernel = "*"
+pytest = "*"
+deepdiff = "*"
+pylint = "*"
+black = "*"
+isort = "*"
+pre-commit = "*"
+
+[requires]
+python_version = "3.10"
