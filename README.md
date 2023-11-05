@@ -1,4 +1,4 @@
-# smoker-signals: a ML Project for ML Bookcamp
+# Smoker Signals: a Machine Learning Project for DataTalksClub MLBookcamp
 
 ## Problem Description
 
