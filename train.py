@@ -1,18 +1,5 @@
-!pip install kaggle --upgrade
-
-import os
-from getpass import getpass
-from google.colab import userdata
-os.environ["KAGGLE_USERNAME"]="name"
-os.environ["KAGGLE_KEY"] = userdata.get('KAGGLE_KEY')
-# Enter key with no " "
-
-!kaggle competitions download -c playground-series-s3e24
-
-!unzip -q "./playground-series-s3e24.zip" -d .
-
 # general libraries
-import time
+
 import pickle
 import numpy as np
 import pandas as pd
@@ -20,10 +7,6 @@ import pandas as pd
 # visualization
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.tree import export_text
-from sklearn.tree import export_graphviz
-from sklearn.metrics import ConfusionMatrixDisplay
-from sklearn.metrics import confusion_matrix
 
 # modelling
 from sklearn.model_selection import train_test_split, StratifiedKFold
@@ -37,25 +20,12 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder, FunctionTransfo
 # ensemble
 import xgboost as xgb
 from xgboost import XGBClassifier
-import lightgbm as lgb
-from lightgbm import LGBMClassifier
 
-# hypertuning
-import mlflow
-from hyperopt import fmin, tpe, hp, STATUS_OK, Trials
-from hyperopt.pyll import scope
 
 #Metrics
 from sklearn.metrics import f1_score, log_loss, roc_auc_score, precision_score, recall_score, matthews_corrcoef
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.model_selection import cross_val_score, cross_validate
-
-# interpretability
-import shap
-import lime
-from lime.lime_tabular import LimeTabularExplainer
-
-pd.set_option('display.max_columns', None)
 
 ##############################################################################
 # Feature Engineering
@@ -203,5 +173,5 @@ print(f'auc={auc}')
 
 # Saving the model
 print("Saving the model to current directory")
-pickle.dump(model, open('./xgb_smoking_model.pkl', 'wb'))
+pickle.dump(model, open('./xgb_smoking_model_1.pkl', 'wb'))
 print("Saved!")

@@ -19,6 +19,7 @@ matplotlib = "*"
 pysftp = "*"
 jinja2 = "*"
 awsebcli = "*"
+make = "*"
 
 [dev-packages]
 ipykernel = "*"

@@ -4,9 +4,9 @@
 import requests
 
 
-# url = 'http://localhost:9696/predict'
-host="smoker-serving-env.eba-pvppz392.ap-southeast-1.elasticbeanstalk.com"
-url= f"http://{host}/predict"
+url = 'http://localhost:9696/predict'
+# host="smoker-serving-env.eba-pvppz392.ap-southeast-1.elasticbeanstalk.com"
+# url= f"http://{host}/predict"
 
 patient_id = 'xyz-123'
 patient = {
